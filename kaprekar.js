@@ -13,10 +13,19 @@ function htmlx()
         let dig3 = numList[1];
         let dig4 = numList[0];
 
-        let descendingNumber = Number(dig1.toString() + dig2.toString() + dig3.toString() + dig4.toString());
-        let ascendingNumber = Number(dig4.toString() + dig3.toString() + dig2.toString() + dig1.toString());
+        if (dig1 == dig2 == dig3 == dig4) 
+        {
+            var sonuc = "Lütfen uygun bir sayı girin.";
+            console.log('eşit');
+        }
 
-        var sonuc = is_6174_real(number, descendingNumber, ascendingNumber);
+        else 
+        {
+            let descendingNumber = Number(dig1.toString() + dig2.toString() + dig3.toString() + dig4.toString());
+            let ascendingNumber = Number(dig4.toString() + dig3.toString() + dig2.toString() + dig1.toString());
+    
+            var sonuc = is_6174_real(number, descendingNumber, ascendingNumber);
+        }
     }
 
     else 
